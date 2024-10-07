@@ -16,3 +16,17 @@ class TaskManagerApp extends StatelessWidget {
     );
   }
 }
+
+class Task {
+  String name;
+  bool isCompleted;
+
+  Task({required this.name, this.isCompleted = false});
+}
+
+class TaskListScreen extends StatefulWidget {
+  const TaskListScreen({super.key});
+
+  @override
+  _TaskListScreenState createState() => _TaskListScreenState();
+}
